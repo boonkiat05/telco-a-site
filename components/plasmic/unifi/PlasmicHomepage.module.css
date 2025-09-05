@@ -289,7 +289,7 @@
   }
 }
 .sliderCarousel:global(.__wab_instance) {
-  width: 1800px;
+  width: auto;
   max-width: 280%;
   flex-direction: column;
   object-fit: cover;

@@ -84,6 +84,8 @@ export type PlasmicNavbar__OverridesType = {
   root?: Flex__<"div">;
   freeBox?: Flex__<"div">;
   logo?: Flex__<typeof Logo>;
+  move2Home?: Flex__<"a"> & Partial<LinkProps>;
+  link?: Flex__<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultNavbarProps {
@@ -177,13 +179,16 @@ function PlasmicNavbar__RenderFunc(props: {
         />
       </div>
       <PlasmicLink__
+        data-plasmic-name={"move2Home"}
+        data-plasmic-override={overrides.move2Home}
         className={classNames(
           projectcss.all,
           projectcss.a,
           projectcss.__wab_text,
-          sty.link__oMdll,
+          sty.move2Home,
+          "Move2Home",
           {
-            [sty.linkglobal_unnamedGlobalGroupOfVariants2_unnamedVariant__oMdlle9Dzn]:
+            [sty.move2Homeglobal_unnamedGlobalGroupOfVariants2_unnamedVariant]:
               hasVariant(
                 globalVariants,
                 "unnamedGlobalGroupOfVariants2",
@@ -203,6 +208,31 @@ function PlasmicNavbar__RenderFunc(props: {
         }
         onClick={async event => {
           const $steps = {};
+
+          $steps["goToHomepage"] = true
+            ? (() => {
+                const actionArgs = { destination: `/` };
+                return (({ destination }) => {
+                  if (
+                    typeof destination === "string" &&
+                    destination.startsWith("#")
+                  ) {
+                    document
+                      .getElementById(destination.substr(1))
+                      .scrollIntoView({ behavior: "smooth" });
+                  } else {
+                    __nextRouter?.push(destination);
+                  }
+                })?.apply(null, [actionArgs]);
+              })()
+            : undefined;
+          if (
+            $steps["goToHomepage"] != null &&
+            typeof $steps["goToHomepage"] === "object" &&
+            typeof $steps["goToHomepage"].then === "function"
+          ) {
+            $steps["goToHomepage"] = await $steps["goToHomepage"];
+          }
         }}
         platform={"nextjs"}
         target={
@@ -212,19 +242,21 @@ function PlasmicNavbar__RenderFunc(props: {
             "unnamedVariant"
           ) && hasVariant(globalVariants, "screen", "mobileOnly")
             ? undefined
-            : undefined
+            : "_blank"
         }
       >
         {"Home"}
       </PlasmicLink__>
       <PlasmicLink__
+        data-plasmic-name={"link"}
+        data-plasmic-override={overrides.link}
         className={classNames(
           projectcss.all,
           projectcss.a,
           projectcss.__wab_text,
-          sty.link__dncXm,
+          sty.link,
           {
-            [sty.linkglobal_unnamedGlobalGroupOfVariants2_unnamedVariant__dncXme9Dzn]:
+            [sty.linkglobal_unnamedGlobalGroupOfVariants2_unnamedVariant]:
               hasVariant(
                 globalVariants,
                 "unnamedGlobalGroupOfVariants2",
@@ -271,9 +303,11 @@ function PlasmicNavbar__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "logo"],
+  root: ["root", "freeBox", "logo", "move2Home", "link"],
   freeBox: ["freeBox", "logo"],
-  logo: ["logo"]
+  logo: ["logo"],
+  move2Home: ["move2Home"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -282,6 +316,8 @@ type NodeDefaultElementType = {
   root: "div";
   freeBox: "div";
   logo: typeof Logo;
+  move2Home: "a";
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -346,6 +382,8 @@ export const PlasmicNavbar = Object.assign(
     // Helper components rendering sub-elements
     freeBox: makeNodeComponent("freeBox"),
     logo: makeNodeComponent("logo"),
+    move2Home: makeNodeComponent("move2Home"),
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,

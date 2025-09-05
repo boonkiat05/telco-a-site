@@ -2297,9 +2297,35 @@ function PlasmicHomepage__RenderFunc(props: {
                             {"Select"}
                           </div>
                         }
-                        linkTo={
-                          "https://wa.me/60107801215?text=Hi, I am interest to purchase 100MBPS plan."
-                        }
+                        linkTo={""}
+                        onClick={async event => {
+                          const $steps = {};
+
+                          $steps["goToLeads"] = true
+                            ? (() => {
+                                const actionArgs = { destination: "#leads" };
+                                return (({ destination }) => {
+                                  if (
+                                    typeof destination === "string" &&
+                                    destination.startsWith("#")
+                                  ) {
+                                    document
+                                      .getElementById(destination.substr(1))
+                                      .scrollIntoView({ behavior: "smooth" });
+                                  } else {
+                                    __nextRouter?.push(destination);
+                                  }
+                                })?.apply(null, [actionArgs]);
+                              })()
+                            : undefined;
+                          if (
+                            $steps["goToLeads"] != null &&
+                            typeof $steps["goToLeads"] === "object" &&
+                            typeof $steps["goToLeads"].then === "function"
+                          ) {
+                            $steps["goToLeads"] = await $steps["goToLeads"];
+                          }
+                        }}
                         openLinkInNewTab={true}
                       />
                     }
@@ -2431,9 +2457,35 @@ function PlasmicHomepage__RenderFunc(props: {
                               {"Select"}
                             </div>
                           }
-                          linkTo={
-                            "https://wa.me/60107801215?text=Hi, I am interest to purchase 300MBPS plan."
-                          }
+                          linkTo={""}
+                          onClick={async event => {
+                            const $steps = {};
+
+                            $steps["goToLeads"] = true
+                              ? (() => {
+                                  const actionArgs = { destination: "#leads" };
+                                  return (({ destination }) => {
+                                    if (
+                                      typeof destination === "string" &&
+                                      destination.startsWith("#")
+                                    ) {
+                                      document
+                                        .getElementById(destination.substr(1))
+                                        .scrollIntoView({ behavior: "smooth" });
+                                    } else {
+                                      __nextRouter?.push(destination);
+                                    }
+                                  })?.apply(null, [actionArgs]);
+                                })()
+                              : undefined;
+                            if (
+                              $steps["goToLeads"] != null &&
+                              typeof $steps["goToLeads"] === "object" &&
+                              typeof $steps["goToLeads"].then === "function"
+                            ) {
+                              $steps["goToLeads"] = await $steps["goToLeads"];
+                            }
+                          }}
                           openLinkInNewTab={true}
                         />
 
@@ -2575,9 +2627,35 @@ function PlasmicHomepage__RenderFunc(props: {
                               {"Select"}
                             </div>
                           }
-                          linkTo={
-                            "https://wa.me/60107801215?text=Hi, I am interest to purchase 500MBPS plan."
-                          }
+                          linkTo={""}
+                          onClick={async event => {
+                            const $steps = {};
+
+                            $steps["goToLeads"] = true
+                              ? (() => {
+                                  const actionArgs = { destination: "#leads" };
+                                  return (({ destination }) => {
+                                    if (
+                                      typeof destination === "string" &&
+                                      destination.startsWith("#")
+                                    ) {
+                                      document
+                                        .getElementById(destination.substr(1))
+                                        .scrollIntoView({ behavior: "smooth" });
+                                    } else {
+                                      __nextRouter?.push(destination);
+                                    }
+                                  })?.apply(null, [actionArgs]);
+                                })()
+                              : undefined;
+                            if (
+                              $steps["goToLeads"] != null &&
+                              typeof $steps["goToLeads"] === "object" &&
+                              typeof $steps["goToLeads"].then === "function"
+                            ) {
+                              $steps["goToLeads"] = await $steps["goToLeads"];
+                            }
+                          }}
                           openLinkInNewTab={true}
                         />
                       ),
@@ -2692,9 +2770,35 @@ function PlasmicHomepage__RenderFunc(props: {
                             {"Select"}
                           </div>
                         }
-                        linkTo={
-                          "https://wa.me/60107801215?text=Hi, I am interest to purchase 1GBPS plan."
-                        }
+                        linkTo={""}
+                        onClick={async event => {
+                          const $steps = {};
+
+                          $steps["goToPage"] = true
+                            ? (() => {
+                                const actionArgs = { destination: "#leads" };
+                                return (({ destination }) => {
+                                  if (
+                                    typeof destination === "string" &&
+                                    destination.startsWith("#")
+                                  ) {
+                                    document
+                                      .getElementById(destination.substr(1))
+                                      .scrollIntoView({ behavior: "smooth" });
+                                  } else {
+                                    __nextRouter?.push(destination);
+                                  }
+                                })?.apply(null, [actionArgs]);
+                              })()
+                            : undefined;
+                          if (
+                            $steps["goToPage"] != null &&
+                            typeof $steps["goToPage"] === "object" &&
+                            typeof $steps["goToPage"].then === "function"
+                          ) {
+                            $steps["goToPage"] = await $steps["goToPage"];
+                          }
+                        }}
                         openLinkInNewTab={true}
                       />
                     }
@@ -2766,9 +2870,35 @@ function PlasmicHomepage__RenderFunc(props: {
                             {"Select"}
                           </div>
                         }
-                        linkTo={
-                          "https://wa.me/60107801215?text=Hi, I am interest to purchase 2GBPS plan."
-                        }
+                        linkTo={""}
+                        onClick={async event => {
+                          const $steps = {};
+
+                          $steps["goToLeads"] = true
+                            ? (() => {
+                                const actionArgs = { destination: "#leads" };
+                                return (({ destination }) => {
+                                  if (
+                                    typeof destination === "string" &&
+                                    destination.startsWith("#")
+                                  ) {
+                                    document
+                                      .getElementById(destination.substr(1))
+                                      .scrollIntoView({ behavior: "smooth" });
+                                  } else {
+                                    __nextRouter?.push(destination);
+                                  }
+                                })?.apply(null, [actionArgs]);
+                              })()
+                            : undefined;
+                          if (
+                            $steps["goToLeads"] != null &&
+                            typeof $steps["goToLeads"] === "object" &&
+                            typeof $steps["goToLeads"].then === "function"
+                          ) {
+                            $steps["goToLeads"] = await $steps["goToLeads"];
+                          }
+                        }}
                         openLinkInNewTab={true}
                       />
                     }
