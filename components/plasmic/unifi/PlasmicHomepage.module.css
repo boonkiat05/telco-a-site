@@ -2134,7 +2134,7 @@
   margin-bottom: 50px;
   align-self: center;
   max-width: 1600px;
-  width: 1800px;
+  width: auto;
   box-shadow: none;
   border-radius: 100px;
   padding: 83px 0px 64px;
@@ -2178,8 +2178,8 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
-  max-width: 1500px;
-  width: 1800px;
+  max-width: 2300px;
+  width: 1700px;
   align-self: center;
 }
 @media (min-width: 0px) and (max-width: 768px) {
