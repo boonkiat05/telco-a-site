@@ -9,19 +9,29 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@plasmicapp/cli": "^0.1.342",
+    "@plasmicapp/react-web": "^0.2.399",
+    "@plasmicpkgs/antd5": "^0.0.301",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.251",
+    "@plasmicpkgs/plasmic-tabs": "^0.0.65",
+    "@plasmicpkgs/react-aria": "^0.0.150",
+    "@plasmicpkgs/react-scroll-parallax": "^0.0.232",
+    "@plasmicpkgs/react-slick": "^0.0.245",
+    "next": "15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.2"
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

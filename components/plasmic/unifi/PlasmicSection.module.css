@@ -1,0 +1,75 @@
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0px;
+  position: relative;
+  width: auto;
+  height: auto;
+  background: url("/plasmic/unifi/images/abstractGradienOrangeSunkistSunsetGradientMeshBackgroundVectorJpg.jpg") 0% 0% / 200% 100%,
+    radial-gradient(ellipse 40% 60% at 20% 20%, #ce9fff 0%, #56b9ff 100%) top
+      50% left 50% / cover repeat;
+  box-shadow: none;
+  border-radius: 100px;
+  padding: 60px 64px 100px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#f7c872d9, #f7c872d9),
+      url("/plasmic/unifi/images/screenshot20250826100952Png.png") 0% 0% / 200% 100%,
+      radial-gradient(ellipse 40% 60% at 20% 20%, #ce9fff 0%, #56b9ff 100%) top
+        50% left 50% / cover repeat;
+    box-shadow: 0px 4px 30px 0px #00000047;
+    column-gap: 0px;
+    border-radius: 0px;
+  }
+}
+.rootbackground_dark {
+  background: url("/plasmic/unifi/images/_11639335896Ojatphihknigoiwlfbalgz4Kh4Tmknpaqg4Tu62Pfefd3Dnazhywgnaujancoy8Vrjah8Mxy12B39Zaf9Jfh9Cifficcc7Qa2Z0HPhotoGridPng.png") top 50% left 12% / cover repeat;
+  border-radius: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .rootbackground_dark {
+    background: url("/plasmic/unifi/images/_11639335896Ojatphihknigoiwlfbalgz4Kh4Tmknpaqg4Tu62Pfefd3Dnazhywgnaujancoy8Vrjah8Mxy12B39Zaf9Jfh9Cifficcc7Qa2Z0HPhotoGridPng.png") top 50% left 31% / cover repeat;
+  }
+}
+.rootbackground_gray {
+  background: var(--token-bN2_gHOwoyHf);
+  border-radius: 0px 800px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .rootbackground_gray {
+    border-top-left-radius: 500px;
+    background: linear-gradient(0deg, #c0b1b1bd 0%, #a69999 100%) 0% 0% / 100%
+        100% repeat,
+      url("/plasmic/unifi/images/gettyImages104182253487Df3A732F0E4F76A69Bd33E2Be933F8Jpg.jpg") top 50% left 50% / cover repeat;
+  }
+}
+.freeBox {
+  max-width: var(--token-46itZ0B3RStE);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  background: none;
+  min-width: 0;
+  padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+.freeBoxsize_fullContentWidth {
+  max-width: none;
+}

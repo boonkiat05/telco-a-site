@@ -1,0 +1,35 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
+  column-gap: 16px;
+}
+.rootvertical {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  column-gap: 0px;
+}
+.rootcard {
+  box-shadow: 0px 1px 1px 1px #0000001a;
+  background: var(--token-o52vypV0fWlP);
+  border-radius: 16px;
+  padding: 24px;
+}
+.contentContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  row-gap: 4px;
+}
+.slotTargetTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+.slotTargetTitledarkBackground {
+  color: var(--token-o52vypV0fWlP);
+}

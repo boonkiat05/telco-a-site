@@ -1,0 +1,96 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  column-gap: 16px;
+  background: #ffffff;
+  min-width: 0;
+  padding: 16px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    background: #ffffff;
+    margin-right: 0px;
+    padding: 35px 20px 32px 32px;
+  }
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--token-46itZ0B3RStE);
+  column-gap: 16px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    column-gap: 0px;
+  }
+}
+.logo:global(.__wab_instance) {
+  height: 44px;
+  max-width: 59px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .logo:global(.__wab_instance) {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+.link__oMdll {
+  color: var(--token-ai8pOYXNVAx1);
+  font-size: 25px;
+  align-self: auto;
+  text-align: center;
+  font-weight: 700;
+  text-decoration-line: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .link__oMdll {
+    font-size: var(--token-cJUsuasre7x3);
+    padding-right: 0px;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-left: 10px;
+  }
+}
+.root .link__oMdll:hover:active {
+  color: var(--token-lIpqbQCAU_h3);
+  text-decoration-line: underline;
+}
+.link__dncXm {
+  padding-bottom: 0px;
+  color: var(--token-ai8pOYXNVAx1);
+  font-size: 25px;
+  padding-right: 0px;
+  font-weight: 700;
+  margin: 0px 40px 0px 20px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .link__dncXm {
+    position: relative;
+    left: auto;
+    top: auto;
+    padding-bottom: 0px;
+    margin-left: 6px;
+    margin-right: 0px;
+    font-size: var(--token-cJUsuasre7x3);
+  }
+}
+.root .link__dncXm:hover:active {
+  text-decoration-line: underline;
+  color: var(--token-lIpqbQCAU_h3);
+}
