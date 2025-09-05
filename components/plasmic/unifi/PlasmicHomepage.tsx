@@ -4418,25 +4418,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
             <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__mrwWq
-              )}
-            >
-              <React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{
-                    color: "var(--token-ai8pOYXNVAx1)",
-                    fontWeight: 700
-                  }}
-                >
-                  {"Feedback"}
-                </span>
-              </React.Fragment>
-            </div>
-            <div
               className={classNames(projectcss.all, sty.freeBox___2Cl5Z, {
                 [sty.freeBoxglobal_unnamedGlobalGroupOfVariants2_unnamedVariant___2Cl5Ze9Dzn]:
                   hasVariant(
