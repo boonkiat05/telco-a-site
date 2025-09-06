@@ -207,34 +207,6 @@ function PlasmicNavbar__RenderFunc(props: {
             ? `/`
             : `/`
         }
-        onClick={async event => {
-          const $steps = {};
-
-          $steps["goToHomepage"] = true
-            ? (() => {
-                const actionArgs = { destination: `/` };
-                return (({ destination }) => {
-                  if (
-                    typeof destination === "string" &&
-                    destination.startsWith("#")
-                  ) {
-                    document
-                      .getElementById(destination.substr(1))
-                      .scrollIntoView({ behavior: "smooth" });
-                  } else {
-                    __nextRouter?.push(destination);
-                  }
-                })?.apply(null, [actionArgs]);
-              })()
-            : undefined;
-          if (
-            $steps["goToHomepage"] != null &&
-            typeof $steps["goToHomepage"] === "object" &&
-            typeof $steps["goToHomepage"].then === "function"
-          ) {
-            $steps["goToHomepage"] = await $steps["goToHomepage"];
-          }
-        }}
         platform={"nextjs"}
         target={
           hasVariant(
