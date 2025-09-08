@@ -6021,7 +6021,6 @@ function PlasmicBusiness__RenderFunc(props: {
             <SignUpPrompt
               data-plasmic-name={"signUpPrompt"}
               data-plasmic-override={overrides.signUpPrompt}
-              children={null}
               className={classNames("__wab_instance", sty.signUpPrompt, {
                 [sty.signUpPromptglobal_unnamedGlobalGroupOfVariants2_unnamedVariant]:
                   hasVariant(
@@ -6761,7 +6760,24 @@ function PlasmicBusiness__RenderFunc(props: {
                   />
                 </React.Fragment>
               }
-            />
+            >
+              <Orange
+                className={classNames("__wab_instance", sty.orange__sdGxv)}
+                label={
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gj9L7
+                    )}
+                  >
+                    {"Save"}
+                  </div>
+                }
+                size={"extraLarge"}
+                submitsForm={true}
+              />
+            </SignUpPrompt>
           </div>
           <div
             className={classNames(
