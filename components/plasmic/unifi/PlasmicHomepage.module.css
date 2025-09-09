@@ -235,7 +235,7 @@
 .banner:global(.__wab_instance) {
   width: 100%;
   height: 617px;
-  max-width: 1625px;
+  max-width: 100%;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
